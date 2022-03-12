@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, StatusBar, SafeAreaView } from "react-native";
 import { useFonts } from "expo-font";
+import Header from "./components/Header";
+import GlobalStyles from "./styles/AppStyles";
+import Colors from "./styles/Colors";
+import Body from './components/Body'
 
 const customFonts = {
   yekan: require("./assets/fonts/yekan.ttf"),
@@ -16,20 +20,9 @@ export default function App() {
   }
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.txt}>Hello World</Text>
-    </View>
+    <SafeAreaView style={GlobalStyles.container}>
+      <StatusBar backgroundColor={Colors.statusBg} />
+      <Body />
+    </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  txt: {
-    fontFamily: "oswald",
-  },
-});
