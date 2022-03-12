@@ -4,5 +4,6 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     alignItems: "center",
+    direction: "ltr"
   },
 });

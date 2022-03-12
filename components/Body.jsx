@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { FlatList, ScrollView } from "react-native";
+import { FlatList, View, ScrollView, Dimensions } from "react-native";
 import Locations from "./Locations";
 import RenderItem from "./RenderItem";
 
@@ -20,7 +20,7 @@ const Body = () => {
   }, []);
 
   return (
-    <ScrollView>
+    <View>
       <FlatList
         horizontal={true}
         pagingEnabled={true}
@@ -32,7 +32,7 @@ const Body = () => {
           <RenderItem images={images} location={item} />
         )}
       />
-    </ScrollView>
+    </View>
   );
 };
 

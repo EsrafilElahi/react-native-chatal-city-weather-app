@@ -8,25 +8,25 @@ const Header = () => {
 
   return (
     <SafeAreaView style={GlobalStyles.container}>
-      <Feather
-        name="search"
+      <Entypo
+        name="location-pin"
         size={30}
-        color="black"
-        onPress={() => Alert.alert("search")}
+        color="#FFF"
+        onPress={() => Alert.alert("location")}
         style={GlobalStyles.Icon}
       />
       <TextInput
         style={GlobalStyles.txtInput}
         value={search}
-        onChangeText={setSearch}
+        onChangeText={(txt) => setSearch(txt)}
         placeholder="نام شهر خود را وارد کنید..."
-        placeholderTextColor="black"
+        placeholderTextColor="#FFF"
       />
-      <Entypo
-        name="location-pin"
+      <Feather
+        name="search"
         size={30}
-        color="black"
-        onPress={() => Alert.alert("location")}
+        color="#FFF"
+        onPress={() => Alert.alert("search")}
         style={GlobalStyles.Icon}
       />
     </SafeAreaView>
