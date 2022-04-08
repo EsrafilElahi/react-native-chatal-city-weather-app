@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { TextInput, SafeAreaView, Alert } from "react-native";
 import { Entypo, Feather } from "@expo/vector-icons";
 import GlobalStyles from "../styles/HeaderStyles";
 
 const Header = () => {
+  const [search, setSearch] = useState("");
+
   return (
     <SafeAreaView style={GlobalStyles.container}>
       <Entypo
