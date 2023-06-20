@@ -4,7 +4,7 @@ import { useFonts } from "expo-font";
 import Header from "./components/Header";
 import GlobalStyles from "./styles/AppStyles";
 import Colors from "./styles/Colors";
-import Body from './components/Body'
+import Body from './components/Body';
 
 const customFonts = {
   yekan: require("./assets/fonts/yekan.ttf"),
